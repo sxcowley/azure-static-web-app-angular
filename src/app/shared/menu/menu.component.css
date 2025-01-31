@@ -1,0 +1,14 @@
+nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul.menu li {
+    display: inline;
+    margin: 5px;
+  }
+  
+  nav ul.menu li.active {
+    font-weight: bold;
+  }
+  
