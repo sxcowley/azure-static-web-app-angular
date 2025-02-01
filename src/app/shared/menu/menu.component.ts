@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MenuService } from '../shared/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,11 +6,10 @@ import { MenuService } from '../shared/menu.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-  menuItems = ['Home', 'About', 'Services', 'Contact'];
-
-  constructor(private menuService: MenuService) {}
-
-  selectMenuItem(item: string): void {
-    this.menuService.setActiveItem(item);
-  }
+  menuItems = [
+    { label: 'Home', link: '/' },
+    { label: 'About', link: '/about' },
+    { label: 'Services', link: '/services' },
+    { label: 'Contact', link: '/contact' }
+  ];
 }
